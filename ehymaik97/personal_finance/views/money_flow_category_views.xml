@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="money_flow_category_search_view">
+        <field name="name">Category</field>
+        <field name="model">money.flow.category</field>
+        <field name="arch" type="xml">
+            <search string="Category Search">
+                <field name="name"/>
+                <field name="type"/>
+                <filter string="Type" name="type" domain="[]" context="{'group_by': 'type'}"/>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="money_flow_category_form_view">
+        <field name="name">Category</field>
+        <field name="model">money.flow.category</field>
+        <field name="arch" type="xml">
+            <form string="Category">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="type"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="money_flow_category_tree_view">
+        <field name="name">Category</field>
+        <field name="model">money.flow.category</field>
+        <field name="arch" type="xml">
+            <tree string="Category" editable="bottom" sample="1">
+                <field name="name"/>
+                <field name="type"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="money_flow_action_category" model="ir.actions.act_window">
+        <field name="name">Category</field>
+        <field name="res_model">money.flow.category</field>
+        <field name="domain">[('create_uid', '=', uid)]</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No category found. Let's create one!
+            </p>
+            <p>
+                Categories are perfect to categorize your tasks.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_personal_finance_category"
+          name="Category"
+          parent="menu_personal_finance_configuration"
+          sequence="1"
+          action="money_flow_action_category"/>
+</odoo>

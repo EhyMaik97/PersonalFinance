@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_money_flow_form" model="ir.ui.view">
+        <field name="name">money.flow.form</field>
+        <field name="model">money.flow</field>
+        <field name="arch" type="xml">
+            <form string="Money Flow">
+                <sheet>
+                    <group>
+                        <field name="currency_id" invisible="1"/>
+                        <field name="money_in_out"/>
+                        <field name="issue_date"/>
+                        <field name="category_id" options="{'no_open': True}"/>
+                        <field name="tags_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
+                        <field name="money_type"/>
+                        <field name="credit_card_id" attrs="{'invisible': [('money_type', '!=', 'credit_card')], 'required':[('money_type', '=', 'credit_card')]}" options="{'no_open': True}"/>
+                        <field name="credit_card_info" string = '' attrs="{'invisible': [('credit_card_id', '=', False)]}"/>
+                        <field name="amount" sum="Total" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="money_flow_view_tree" model="ir.ui.view">
+        <field name="name">money.flow.view.tree</field>
+        <field name="model">money.flow</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="currency_id" invisible="1"/>
+                <field name="money_in_out"/>
+                <field name="issue_date"/>
+                <field name="category_id" options="{'no_open': True}"/>
+                <field name="tags_ids" widget="many2many_tags" options="{'color_field': 'color'}" />
+                <field name="money_type"/>
+                <field name="amount" sum="Total" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="money_flow_search_view">
+        <field name="name">Tags</field>
+        <field name="model">money.flow</field>
+        <field name="arch" type="xml">
+            <search string="Money Flow">
+                <field name="money_type"/>
+                <field name="money_in_out"/>
+                <field name="category_id"/>
+                <filter string="Type" name="type" domain="[]" context="{'group_by': 'money_in_out'}"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="money_flow_action" model="ir.actions.act_window">
+        <field name="name">Money Flow</field>
+        <field name="res_model">money.flow</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="domain">[('create_uid', '=', uid)]</field>
+        <field name="help">Your Plan</field>
+    </record>
+
+
+    <!-- Flow Money Menu -->
+    <menuitem id="menu_flow_money"
+              name="Money Flow"
+              parent="menu_personal_finance_root"
+              sequence="1"
+              action="money_flow_action"/>
+</odoo>

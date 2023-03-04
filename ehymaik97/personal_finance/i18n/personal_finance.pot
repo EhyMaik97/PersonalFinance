@@ -1,0 +1,327 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* personal_finance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-04 01:29+0000\n"
+"PO-Revision-Date: 2023-03-04 01:29+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: personal_finance
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow__amount
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow_report__amount
+msgid "Amount"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.model.fields,field_description:personal_finance.field_credit_card__name
+msgid "Card Holder Name"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.model.fields,field_description:personal_finance.field_credit_card__info_card
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow__credit_card_info
+msgid "Card Info"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.model.fields,field_description:personal_finance.field_credit_card__card_number
+msgid "Card Number"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.model.fields,field_description:personal_finance.field_credit_card__card_type
+msgid "Card Type"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.model.fields.selection,name:personal_finance.selection__money_flow__money_type__cash
+#: model:ir.model.fields.selection,name:personal_finance.selection__money_flow_report__money_type__cash
+msgid "Cash"
+msgstr ""
+
+#. module: personal_finance
+#: model_terms:ir.actions.act_window,help:personal_finance.money_flow_action_category
+msgid "Categories are perfect to categorize your tasks."
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.actions.act_window,name:personal_finance.money_flow_action_category
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow__category_id
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow_report__category_id
+#: model:ir.ui.menu,name:personal_finance.menu_personal_finance_category
+#: model_terms:ir.ui.view,arch_db:personal_finance.money_flow_category_form_view
+#: model_terms:ir.ui.view,arch_db:personal_finance.money_flow_category_tree_view
+msgid "Category"
+msgstr ""
+
+#. module: personal_finance
+#: code:addons/personal_finance/models/money_flow_category.py:0
+#: model:ir.model.constraint,message:personal_finance.constraint_money_flow_category_name_uniq
+#, python-format
+msgid "Category name already exists!"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow_tags__color
+msgid "Color"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.ui.menu,name:personal_finance.menu_personal_finance_configuration
+msgid "Configuration"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.model.fields,field_description:personal_finance.field_credit_card__create_uid
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow__create_uid
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow_category__create_uid
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow_tags__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.model.fields,field_description:personal_finance.field_credit_card__create_date
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow__create_date
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow_category__create_date
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow_tags__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.model,name:personal_finance.model_credit_card
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow__credit_card_id
+#: model:ir.model.fields.selection,name:personal_finance.selection__money_flow__money_type__credit_card
+#: model:ir.model.fields.selection,name:personal_finance.selection__money_flow_report__money_type__credit_card
+#: model_terms:ir.ui.view,arch_db:personal_finance.credit_card_form_view
+#: model_terms:ir.ui.view,arch_db:personal_finance.credit_card_search_view
+#: model_terms:ir.ui.view,arch_db:personal_finance.credit_card_tree_view
+msgid "Credit Card"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.actions.act_window,name:personal_finance.money_flow_action_credit_cards
+#: model:ir.ui.menu,name:personal_finance.menu_personal_finance_credit_cards
+msgid "Credit Cards"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow__currency_id
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow_report__currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow__description
+msgid "Description"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.model.fields,field_description:personal_finance.field_credit_card__display_name
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow__display_name
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow_category__display_name
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow_report__display_name
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow_tags__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.model.fields,field_description:personal_finance.field_credit_card__id
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow__id
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow_category__id
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow_report__id
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow_tags__id
+msgid "ID"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.model.fields.selection,name:personal_finance.selection__money_flow__money_in_out__in
+#: model:ir.model.fields.selection,name:personal_finance.selection__money_flow_category__type__in
+#: model:ir.model.fields.selection,name:personal_finance.selection__money_flow_report__money_in_out__in
+msgid "In"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow__money_in_out
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow_category__type
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow_report__money_in_out
+msgid "In/Out"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow_report__date
+msgid "Issue Date"
+msgstr ""
+
+#. module: personal_finance
+#: model_terms:ir.ui.view,arch_db:personal_finance.money_flow_category_search_view
+#: model_terms:ir.ui.view,arch_db:personal_finance.money_flow_tags_search_view
+msgid "Issue Version"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow__issue_date
+msgid "Issue date"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.model.fields,field_description:personal_finance.field_credit_card____last_update
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow____last_update
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow_category____last_update
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow_report____last_update
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow_tags____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.model.fields,field_description:personal_finance.field_credit_card__write_uid
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow__write_uid
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow_category__write_uid
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow_tags__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.model.fields,field_description:personal_finance.field_credit_card__write_date
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow__write_date
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow_category__write_date
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow_tags__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.actions.act_window,name:personal_finance.money_flow_action
+#: model:ir.ui.menu,name:personal_finance.menu_flow_money
+#: model:ir.ui.menu,name:personal_finance.menu_flow_money_reporting
+#: model_terms:ir.ui.view,arch_db:personal_finance.money_flow_search_view
+#: model_terms:ir.ui.view,arch_db:personal_finance.view_money_flow_form
+msgid "Money Flow"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.actions.act_window,name:personal_finance.action_money_flow_report_all
+#: model_terms:ir.ui.view,arch_db:personal_finance.view_money_flow_graph
+#: model_terms:ir.ui.view,arch_db:personal_finance.view_money_flow_pivot
+msgid "Money Flow Analysis"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow__money_type
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow_report__money_type
+msgid "Money Type"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.model,name:personal_finance.model_money_flow_category
+msgid "MoneyFlow Category"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.model,name:personal_finance.model_money_flow_tags
+msgid "MoneyFlow Tags"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow_category__name
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow_tags__name
+msgid "Name"
+msgstr ""
+
+#. module: personal_finance
+#: model_terms:ir.actions.act_window,help:personal_finance.money_flow_action_category
+msgid "No category found. Let's create one!"
+msgstr ""
+
+#. module: personal_finance
+#: model_terms:ir.actions.act_window,help:personal_finance.money_flow_action_credit_cards
+msgid "No credit cards added. Let's create one!"
+msgstr ""
+
+#. module: personal_finance
+#: model_terms:ir.actions.act_window,help:personal_finance.money_flow_action_tags
+msgid "No tags found. Let's create one!"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.model.fields.selection,name:personal_finance.selection__money_flow__money_in_out__out
+#: model:ir.model.fields.selection,name:personal_finance.selection__money_flow_category__type__out
+#: model:ir.model.fields.selection,name:personal_finance.selection__money_flow_report__money_in_out__out
+msgid "Out"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.model.fields.selection,name:personal_finance.selection__money_flow__money_type__paypal
+#: model:ir.model.fields.selection,name:personal_finance.selection__money_flow_report__money_type__paypal
+msgid "PayPal"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.ui.menu,name:personal_finance.menu_personal_finance_root
+msgid "Personal Finance"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.ui.menu,name:personal_finance.menu_personal_finance_reporting
+msgid "Reporting"
+msgstr ""
+
+#. module: personal_finance
+#: code:addons/personal_finance/models/money_flow_tags.py:0
+#: model:ir.model.constraint,message:personal_finance.constraint_money_flow_tags_name_uniq
+#, python-format
+msgid "Tag name already exists!"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.actions.act_window,name:personal_finance.money_flow_action_tags
+#: model:ir.model.fields,field_description:personal_finance.field_money_flow__tags_ids
+#: model:ir.ui.menu,name:personal_finance.menu_personal_finance_tags
+#: model_terms:ir.ui.view,arch_db:personal_finance.money_flow_tags_form_view
+#: model_terms:ir.ui.view,arch_db:personal_finance.money_flow_tags_tree_view
+msgid "Tags"
+msgstr ""
+
+#. module: personal_finance
+#: model_terms:ir.actions.act_window,help:personal_finance.money_flow_action_tags
+msgid "Tags are perfect to categorize your tasks."
+msgstr ""
+
+#. module: personal_finance
+#: model_terms:ir.actions.act_window,help:personal_finance.action_money_flow_report_all
+msgid "This report performs analysis on your money flow."
+msgstr ""
+
+#. module: personal_finance
+#: model_terms:ir.ui.view,arch_db:personal_finance.money_flow_view_tree
+#: model_terms:ir.ui.view,arch_db:personal_finance.view_money_flow_form
+msgid "Total"
+msgstr ""
+
+#. module: personal_finance
+#: model_terms:ir.ui.view,arch_db:personal_finance.money_flow_category_search_view
+#: model_terms:ir.ui.view,arch_db:personal_finance.money_flow_search_view
+msgid "Type"
+msgstr ""
+
+#. module: personal_finance
+#: model_terms:ir.actions.act_window,help:personal_finance.money_flow_action
+msgid "Your Plan"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.model,name:personal_finance.model_money_flow
+msgid "money.flow"
+msgstr ""
+
+#. module: personal_finance
+#: model:ir.model,name:personal_finance.model_money_flow_report
+msgid "money.flow.report"
+msgstr ""

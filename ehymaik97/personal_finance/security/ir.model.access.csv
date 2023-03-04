@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_money_flow,access.money.flow,model_money_flow,,1,1,1,1
+access_money_flow_tags,access.money.flow.tags,model_money_flow_tags,,1,1,1,1
+access_money_flow_category,access.money.flow.category,model_money_flow_category,,1,1,1,1
+access_money_flow_report,access.money.flow.report,model_money_flow_report,,1,1,1,1
+access_credit_card,access.credit.card,model_credit_card,,1,1,1,1

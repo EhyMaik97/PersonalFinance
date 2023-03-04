@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_money_flow_pivot" model="ir.ui.view">
+        <field name="name">money.flow.pivot</field>
+        <field name="model">money.flow.report</field>
+        <field name="arch" type="xml">
+            <pivot string="Money Flow Analysis" sample="1">
+                <field name="money_in_out" type="col"/>
+                <field name="date" interval="month" type="row"/>
+                <field name="money_type" type="row"/>
+                <field name="category_id" type="row"/>
+                <field name="amount" type="measure" />
+            </pivot>
+        </field>
+    </record>
+
+    <record id="view_money_flow_graph" model="ir.ui.view">
+        <field name="name">money.flow.report.graph</field>
+        <field name="model">money.flow.report</field>
+        <field name="arch" type="xml">
+            <graph string="Money Flow Analysis" type="bar">
+                <field name="date" interval="month"/>
+                <field name="amount" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <record id="action_money_flow_report_all" model="ir.actions.act_window">
+        <field name="name">Money Flow Analysis</field>
+        <field name="res_model">money.flow.report</field>
+        <field name="view_mode">pivot,graph</field>
+        <field name="view_id"></field>  <!-- force empty -->
+        <field name="domain">[]</field>
+        <field name="context">{'group_by_no_leaf':1,'group_by':[]}</field>
+        <field name="help">This report performs analysis on your money flow.</field>
+    </record>
+
+    <menuitem id="menu_flow_money_reporting"
+        name="Money Flow"
+        parent="menu_personal_finance_reporting"
+        sequence="1"
+        action="action_money_flow_report_all" />
+</odoo>
