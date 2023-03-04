@@ -40,4 +40,4 @@ Setting Budgets
 
 About Odoo 14
 ----------------
-This project is based on Odoo 14, an open-source business management software that includes a range of business applications, such as accounting, CRM, and e-commerce. Odoo 14 is a powerful platform that allows developers to create custom modules to extend its functionality. This project is an example of a custom module that can be installed on top of Odoo 14 to add [functionality].
+This project is based on Odoo 14, an open-source business management software that includes a range of business applications, such as accounting, CRM, and e-commerce. Odoo 14 is a powerful platform that allows developers to create custom modules to extend its functionality. This project is an example of a custom module that can be installed on top of Odoo 14 to add personal finance management
