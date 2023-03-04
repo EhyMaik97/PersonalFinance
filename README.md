@@ -26,20 +26,3 @@ To view reports, select "View Reports" from the main menu. You can view spending
 Setting Budgets
 
 * **Configuration Menu**: You can configure your personal categories, tags and credit cards (with automatism for chip type of card: VISA, MASTERCARD, AMERICAN EXPRESS...) and use them in transaction form
-
-Images
----------
-
-Review and Analysis your money flow
-
-Support report types: pivot, graph and list
-
-![](static/src/Money_flow.png)
-
-![](static/src/Money_flow_analysis.png)
-
-![](static/src/Money_flow_category.png)
-
-![](static/src/Money_flow_cc.png)
-
-![](static/src/Money_flow_tags.png)
