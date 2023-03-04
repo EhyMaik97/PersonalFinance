@@ -1,19 +1,29 @@
 
 Personal Finance Program
 ----------------
-
 ### This program is designed to help you manage your personal finances. It allows you to track your income, expenses, and investments, and provides tools for analyzing your financial situation.
 
-Features
+Requirements
 ----------------
++ Odoo 14
 
-    
-    * Track your income and expenses
-    * Categorize your transactions
-    * Set budgets for different categories
-    * View your spending patterns over time
-    * Analyze your net worth
-    * Monitor your investments
+
+Installation
+----------------
+* Clone this repository.
+* Install Odoo 14 on your system.
+* Open Odoo and install the module by going to Apps > Update Apps List > Install the module.
+* Start using the module!
+
+
+Features
+----------------  
+* Track your income and expenses
+* Categorize your transactions
+* Set budgets for different categories
+* View your spending patterns over time
+* Analyze your net worth
+* Monitor your investments
 
 
 Usage
