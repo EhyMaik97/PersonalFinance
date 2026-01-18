@@ -1,44 +1,38 @@
 
-Personal Finance Program
-----------------
+Personal Finance (Odoo module)
+================================
 
-### This program is designed to help you manage your personal finances. It allows you to track your income, expenses, and investments, and provides tools for analyzing your financial situation.
+![icon](personal_finance/static/description/icon.png)
 
-Features
-----------------
-    
-* Track your income and expenses
-* Categorize your transactions
-* Set budgets for different categories
-* View your spending patterns over time
-* Analyze your net worth
-* Monitor your investments
+This repository contains an Odoo module to help manage personal finances. It provides transaction tracking, categories, tags, credit card support, and basic reports (pivot, graph, list).
 
+Key features
+-
+- Track income and expenses
+- Categorize transactions and add tags
+- Configure credit cards and categories
+- View reports (pivot, graphs, lists) for review and analysis
 
-Usage
-----------------
-* **Adding Transactions**: 
-To add a new transaction, select "Create" from the main menu "Money Flow". Enter the date, amount, category, tags and description of the transaction.
+Quick usage
+-
+- Install the `personal_finance` module into your Odoo instance.
+- Use the "Money Flow" menu to create transactions and manage categories/tags/credit cards.
+- Open the reports to see pivot tables, charts, and lists of your money flows.
 
-* **Viewing Reports**:
-To view reports, select "View Reports" from the main menu. You can view spending patterns over time, analyze your net worth, and monitor your investments.
-Setting Budgets
-
-* **Configuration Menu**: You can configure your personal categories, tags and credit cards (with automatism for chip type of card: VISA, MASTERCARD, AMERICAN EXPRESS...) and use them in transaction form
-
-Images
----------
-
-Review and Analysis your money flow
-
+Screenshots
+-
 Support report types: pivot, graph and list
 
-![](static/src/Money_flow.png)
+![Money flow](personal_finance/static/src/Money_flow.png)
+![Money flow analysis](personal_finance/static/src/Money_flow_analysis.png)
+![Categories](personal_finance/static/src/Money_flow_category.png)
+![Credit cards](personal_finance/static/src/Money_flow_cc.png)
+![Tags](personal_finance/static/src/Money_flow_tags.png)
 
-![](static/src/Money_flow_analysis.png)
+Where to look in the code
+-
+- Models: [personal_finance/models](personal_finance/models)
+- Views: [personal_finance/views](personal_finance/views)
+- Reports: [personal_finance/report](personal_finance/report)
 
-![](static/src/Money_flow_category.png)
-
-![](static/src/Money_flow_cc.png)
-
-![](static/src/Money_flow_tags.png)
+If you want any additional text, more images, or a different layout, tell me which screenshots or wording you'd prefer.
